@@ -39,4 +39,17 @@ images, poses, focal_lengths = generate_synthetic_data(num_images, image_size, n
 
 # Save data to .npz file
 np.savez('synthetic_dataset.npz', images=images, poses=poses, focal=focal_lengths)
+```
+...
+
+## Visualizing Results
+
+After training the `FastNeRF` model, you can visualize the reconstructed scenes to evaluate the model's performance. This section provides a guide on how to generate and visualize images from the model's output.
+
+### Generating Test Rays
+
+To visualize results, first generate test rays from your dataset's poses and focal lengths. Use the provided utility function to generate rays for each image in your test set.
+
+```python
+ray_origins, ray_directions = generate_test_rays(poses, focal)
 
