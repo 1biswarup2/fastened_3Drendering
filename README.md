@@ -19,10 +19,10 @@ Clone this repository and install the required dependencies.
 git clone https://github.com/your_github/fastenerf.git
 cd fastenerf
 pip install -r requirements.txt
-
+```
 ...
 
-## Synthetic Data Generation
+# Synthetic Data Generation
 
 This project includes a script for generating synthetic data to test the NeRF model. The data simulates a 3D scene composed of various elements, which can be customized as per requirements.
 
